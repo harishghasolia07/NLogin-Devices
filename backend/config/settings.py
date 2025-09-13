@@ -3,7 +3,7 @@ import os
 
 # Database Configuration
 MONGODB_URI = os.getenv(
-    "MONGODB_URI"
+    "MONGODB_URI", "mongodb://localhost:27017"
 )
 
 # Application Configuration
