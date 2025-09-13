@@ -12,8 +12,7 @@ MAX_DEVICES = 2
 # CORS Configuration
 CORS_ORIGINS = [
     "http://localhost:3000",
-    "https://your-frontend-domain.com",
-    "https://your-app.vercel.app"  # Replace with your actual Vercel domain
+    "https://n-device-login.vercel.app"  # Your actual Vercel domain
 ]
 
 # Database Names
