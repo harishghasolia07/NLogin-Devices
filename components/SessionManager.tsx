@@ -111,6 +111,14 @@ export function SessionManager({ userId, currentSessionId, suspendAutoLogout = f
     }
   };
 
+  const getCreatedText = (createdAt: string) => {
+    try {
+      return formatDistance(new Date(createdAt), new Date(), { addSuffix: true });
+    } catch {
+      return 'Unknown';
+    }
+  };
+
   const isCurrentSession = (sessionId: string) => sessionId === currentSessionId;
 
   if (loading) {
@@ -194,7 +202,7 @@ export function SessionManager({ userId, currentSessionId, suspendAutoLogout = f
                           Last active: {getLastSeenText(session.lastSeen)}
                         </div>
                         <div className="text-xs text-gray-400 mt-1">
-                          Created: {getLastSeenText(session.createdAt)}
+                          Created: {getCreatedText(session.createdAt)}
                         </div>
                       </div>
                     </div>
