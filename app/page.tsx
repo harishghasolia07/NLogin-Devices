@@ -72,6 +72,34 @@ export default function Home() {
               </a>
             </Button>
           </div>
+
+          {/* Demo Credentials Section */}
+          <div className="mt-8 p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200 max-w-2xl mx-auto">
+            <div className="text-center mb-4">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🧪 Try the Demo</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Test the multi-device functionality with our demo account
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+              <div className="bg-gray-50 rounded-lg p-3">
+                <div className="font-medium text-gray-700 mb-1">Email:</div>
+                <div className="font-mono text-gray-900 break-all">epicmorse@heywhatsoup.com</div>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <div className="font-medium text-gray-700 mb-1">Password:</div>
+                <div className="font-mono text-gray-900">epicmorse@heywhatsoup.coM</div>
+              </div>
+            </div>
+            <div className="mt-4 text-center">
+              <Button size="sm" asChild className="bg-green-600 hover:bg-green-700 text-white">
+                <a href="/api/auth/login" className="flex items-center justify-center gap-2">
+                  <Shield className="w-4 h-4" />
+                  Try Demo Account
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
 
         <div id="features" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
